@@ -1,12 +1,16 @@
-#include<Wire.h>
-#include<PubSubClient.h>
-#include<ESP8266Wifi.h>
+#include <Wire.h>
+#include <PubSubClient.h>
+#include "ESP8266WiFi.h"
 
-//wifi
+//WiFi Connection Configuration
 
-const char* ssid = "......";
-const char* password = ".......";
-const char* mqtt_server = "10.0.0.10";
+const char* ssid = "Honor 8C";
+const char* password = "ilovejoboah";
+
+// MQTT Connection Configuration
+const char* mqtt_server = "192.168.43.20";
+const char* mqtt_username = "user";
+const char* mqtt_password = "iL0v3MoonGaYoung";
 
 //I2C address
 
@@ -25,7 +29,7 @@ PubSubClient mqttClient(espClient);
 
 //IP address of mqtt server
 
-const char* server = "10.0.0.10";
+const char* server = "192.168.43.20";
 
 void dataReceiver(){
   Wire.beginTransmission(MPU);
