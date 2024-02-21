@@ -4,12 +4,12 @@
 
 //WiFi Connection Configuration
 const char* ssid = "Honor 8C";
-const char* password = "ilovejoboah";
+const char* password = "password";
 
 // MQTT Connection Configuration
 const char* mqtt_server = "192.168.43.20";
 const char* mqtt_username = "user";
-const char* mqtt_password = "iL0v3MoonGaYoung";
+const char* mqtt_password = "password";
 
 //I2C address
 const int MPU = 0x68;
